@@ -38,8 +38,10 @@ public class GameActivity extends AppCompatActivity {
         context=this;
         //Generate integer
         ranNum =generateRanNum(context);
-        ansEditText = (EditText) findViewById(R.id.ansEditTextId); // values inserted
-        ListView ansList = (ListView) findViewById(R.id.ansListId); // List of saved values
+        // values inserted
+        ansEditText = (EditText) findViewById(R.id.ansEditTextId);
+        // List of saved values
+        ListView ansList = (ListView) findViewById(R.id.ansListId);
 
         ansAdapter = new AnsAdapter(this,R.layout.anslist, ansArrayList);
         ansList.setAdapter(ansAdapter);
@@ -74,7 +76,7 @@ public class GameActivity extends AppCompatActivity {
         OnClickListener listener = new OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // 재시작
+                // Restart
                 ranNum = generateRanNum(context);
                 ansArrayList.clear();
                 ansAdapter.notifyDataSetChanged();
@@ -93,7 +95,8 @@ public class GameActivity extends AppCompatActivity {
     private ArrayList<AnsListBean> doCompare() {
         Main m = new Main(getApplicationContext());
         String ansNum = (String) ansEditText.getText().toString();
-        int ans = m.isValid(ansNum);    // Check if the val is number
+        // Check if the val is number
+        int ans = m.isValid(ansNum);
 
         if( ans != -1 ) {
             String result = m.process(ans, ranNum);
