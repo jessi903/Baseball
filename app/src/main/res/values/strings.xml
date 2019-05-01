@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Baseball</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="action_start">Back to Menu</string>
+
+    <string name="hint_insert">Insert Value</string>
+
+    <string name="action_insert">Enter</string>
+
+    <string name="action_game">New Game</string>
+
+    <string name="action_help">Instruction</string>
+
+    <!--Instruction-->
+    <string name="help_text">
+        \n Baseball is a guessing game.
+        \n
+        \n How to Play >>
+        \n
+        \n Guess any four-digit numbers!
+        \n ** EACH DIGIT MUST HAVE DIFFERENT NUMBERS **
+        \n
+        \n Strike (S)
+        \n You get a strike or strikes, if any three of your input has the same number and same digit as the answer.
+        \n
+        \n Ball (B)
+        \n You get a ball or balls, if any three of your input has the same number but different digit as the answer.
+        \n
+        \n Out (Out)
+        \n You get out, if none of your input is in the answer.
+    </string>
+
+</resources>
+
